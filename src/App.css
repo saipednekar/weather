@@ -1,0 +1,176 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.card {
+    width: 400px;
+    margin-top: 50px;
+    position: absolute;
+    top: 200px;
+    left: 600px;
+    background-image: linear-gradient(to top, #f5b62e, #e9d8ba);
+}
+.top {
+    background-image: url('./snow.jpg');
+    background-size: cover;
+    height: 100vh;
+    width:100vw;
+    
+}
+.top2 {
+    position: absolute;
+    top: 180px;
+    left: 117px;
+    background-image: linear-gradient(to top, #fdbb2d, #a70de9);
+}
+.top3 {
+    position: absolute;
+    top: 243px;
+    left:617px;
+    color:white;
+
+}
+.cloud {
+    position: absolute;
+    left: 300px;
+    animation: rotation infinite 8s linear;
+}
+@keyframes rotation {
+    from {
+        bottom: 0px;
+    }
+
+    to {
+        bottom: 900px;
+    }
+}
+.sun {
+    position: absolute;
+    left: 300px;
+    animation: rotation infinite 10s linear;
+}
+@keyframes rotation {
+    
+    from {
+        bottom: 0px;
+    }
+
+    to {
+        bottom: 900px;
+    }
+}
+@media (min-width: 375px) and (max-width: 900px) {
+    .card {
+        display: block;
+        top: 480px;
+        left: 108px;
+        position: absolute;
+        box-shadow: 90px;
+        width: 600px;
+        background-image: linear-gradient(to top, #f2ffa0, #c33e3e);
+        color: black;
+    }
+
+    .top {
+        background-image: url('./weather.jpg');
+        background-size: cover;
+        height: 230vh;
+        width: 230vw;
+    }
+
+    .top2 {
+        position: absolute;
+        top: 330px;
+        left: 20px;
+        background-image: linear-gradient(to top, #fdbb2d, #a70de9);
+    }
+
+    .top3 {
+        position: absolute;
+        top: 390px;
+        left: 150px;
+        color: wheat;
+        font-weight: bold;
+        font-size: 20px
+    }
+
+    .top4 {
+        position: absolute;
+        top: 140px;
+        right: 495px;
+        width: 300px;
+        background-image: linear-gradient(to top, #695731, #daab3a);
+    }
+
+    .cloud {
+        position: absolute;
+        left: 800px;
+        height:150px;
+        width:150px;
+        animation: rotation infinite 8s linear;
+       
+    }
+
+    @keyframes rotation {
+        from {
+            bottom: opx;
+        }
+
+        to {
+            bottom: 900px;
+        }
+    }
+
+    .sun {
+        position: absolute;
+        left: 800px;
+        animation: rotation infinite 8s linear;
+    }
+
+    @keyframes rotation {
+
+        from {
+            bottom: 0px;
+        }
+
+        to {
+            bottom: 900px;
+        }
+    }
+}
+
+
