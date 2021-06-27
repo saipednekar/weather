@@ -37,7 +37,7 @@ const App=()=> {
     const  search = async() => {
         console.log(city)
         // Make a request for a user with a given ID
-        axios.get(`http://api.weatherapi.com/v1/current.json?key=cd9fd4e263504efaa18152229212606&q=${city}`)
+        axios.get(`https://api.weatherapi.com/v1/current.json?key=cd9fd4e263504efaa18152229212606&q=${city}`)
             .then(function (response) {
                 // handle success
                 console.log(response);
